@@ -1,0 +1,433 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+th {
+  font-weight: 600;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: blueviolet;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  padding: 15px;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+
+  .col-s-2 {
+    width: 16.66%;
+  }
+
+  .col-s-3 {
+    width: 25%;
+  }
+
+  .col-s-4 {
+    width: 33.33%;
+  }
+
+  .col-s-5 {
+    width: 41.66%;
+  }
+
+  .col-s-6 {
+    width: 50%;
+  }
+
+  .col-s-7 {
+    width: 58.33%;
+  }
+
+  .col-s-8 {
+    width: 66.66%;
+  }
+
+  .col-s-9 {
+    width: 75%;
+  }
+
+  .col-s-10 {
+    width: 83.33%;
+  }
+
+  .col-s-11 {
+    width: 91.66%;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
+
+input[type=text] {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: rgb(241, 241, 241);
+  padding: 12px 20px 12px 20px;
+}
+
+td input[type=text] {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: inherit !important;
+  padding: 12px 20px 12px 20px;
+}
+
+body {
+  padding: 10px;
+}
+
+.popup {
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.132);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+}
+
+.popup button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 10px;
+  border: none;
+  background-color: tomato;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px;
+  color: white;
+}
+
+.popup h2 {
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.popup h1 {
+  text-align: center;
+  font-size: 70px;
+  color: blueviolet;
+  margin: 0px;
+  padding: 0px 20px;
+  background-color: #9933cc28;
+  border-radius: 10px;
+}
+
+.popup div {
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button h4 {
+  padding: 0px 10px;
+}
+
+.center {
+  margin: auto;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100vw;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+
+  .header h1 {
+    font-size: 25px !important;
+  }
+
+
+  p {
+    font-size: 14px !important;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .item h1 {
+    font-size: 16px !important;
+  }
+
+  th,
+  td,
+  #go-back-btn, .grade-select,
+  input {
+
+    font-size: 14px !important;
+  }
+
+  table th:nth-child(1), table td:nth-child(1){
+max-width: 200px;
+  }
+
+  table th:nth-child(2),
+  table td:nth-child(2),
+  table th:nth-child(5),
+  table td:nth-child(5),
+  table th:nth-child(3),
+  table td:nth-child(3) {
+    display: none;
+  }
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+tr {
+  background-color: #9933cc28;
+}
+
+th {
+  background-color: blueviolet;
+  color: white;
+}
+
+.btn {
+  background: blueviolet;
+  color: #FFF;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+
+  margin: 0px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+select {
+  background-color: blueviolet;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #9933cc28;
+}
+
+.item {
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #9933cc28;
+}
+
+.item h1 {
+  font-size: 20px;
+  padding-right: 10px;
+  margin: 0px;
+}
+
+.item p {
+  font-size: 14px !important;
+  margin: 0px;
+}
+
+
+.item button {
+  flex-grow: 1;
+  margin-left: 10px;
+  background: blueviolet;
+  color: #FFF;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.item div {
+  width: 80%;
+}
+
+
+button span {
+  padding: 10px;
+  line-height: 0px;
+  font-size: 15px;
+}
+
+#go-back-btn {
+  background: blueviolet;
+  color: #FFF;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 40px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  outline: none;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid blueviolet;
+  border-color: blueviolet transparent blueviolet transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: rotate(1800deg);
+  }
+}
