@@ -4,6 +4,18 @@ const gradePoint = [4.0, 4.0, 3.7, 3.3, 3.0, 2.7, 2.3, 2.0, 1.7, 1.3, 1.0, 0.0];
 $('#view-scrn').hide();
 const templateList = $('#template-list');
 
+const firebaseConfig = {
+  apiKey: "AIzaSyBtcVJ9uK5ACKO-eHL3-S7kS75QNkjBRsA",
+  authDomain: "login-screen-c5e85.firebaseapp.com",
+  databaseURL: "https://login-screen-c5e85-default-rtdb.firebaseio.com",
+  projectId: "login-screen-c5e85",
+  storageBucket: "login-screen-c5e85.appspot.com",
+  messagingSenderId: "562075370837",
+  appId: "1:562075370837:web:f0cbae46bd47b7b256dbdc",
+  measurementId: "G-Q8GQ267WM9"
+};
+
+firebase.initializeApp(firebaseConfig);
 
 function listTemplates() {
 
